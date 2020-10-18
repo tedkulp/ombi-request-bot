@@ -28,6 +28,8 @@ services:
     image: tedkulp/ombi-request-bot
     restart: unless-stopped
     container_name: ombi-request-bot
+    ports:
+      - 4322:4322
     environment:
       - OMBI_URL=https://my-ombi-site
       - OMBI_TOKEN=abc123
